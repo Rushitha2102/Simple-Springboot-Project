@@ -13,7 +13,8 @@ public class ProductController {
     ProductService service;
 @GetMapping("/products")
     public List<Product> getProducts() {
-        return service.getProducts();
+
+    return service.getProducts();
     }
     @GetMapping("/products/{productid}")
     public Product getProductByID(@PathVariable int productid) {

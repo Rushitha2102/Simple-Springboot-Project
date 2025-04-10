@@ -1,6 +1,13 @@
 package com.itorizon.simpleWebAPP.Models;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import org.springframework.stereotype.Component;
+
+@Entity
+@Component
 public class Product {
+    @Id
     private int productid;
     private String productname;
     private int price;
@@ -33,6 +40,9 @@ public class Product {
         this.productid = productid;
         this.productname=productname;
         this.price=price;
+    }
+    public Product() {
+
     }
 
     @Override
